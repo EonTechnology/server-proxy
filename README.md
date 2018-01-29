@@ -10,6 +10,7 @@ The security complex is designed to protect peer from excessive activity in the 
 * `git clone ...`
 * `cd ...`
 * `git submodule init`
+* `git submodule update`
 
 ### Setting
 To participate in the generation of blocks, before the start of the peer is need to set the environment variable `SECRET_SEED` with the SEED account, on whose behalf the blocks will be generated.
