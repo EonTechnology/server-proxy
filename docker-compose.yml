@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+
+  nginx:
+    build: $PWD/nginx/
+    ports:
+      - 9443:9443
+    volumes:
+        - $PWD/nginx/nginx.conf:/etc/nginx/nginx.conf
+    restart: always
+
+  peer:
+    build: $PWD/peer/
+    environment:
+      - SECRET_SEED="${SECRET_SEED}"
+    volumes:
+      - $PWD/peer/db:/app/db"
+    restart: always
+
