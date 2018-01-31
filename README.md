@@ -1,5 +1,5 @@
 # Peer security complex
-The security complex is designed to protect peer from excessive activity in the network. It can’t fully protect the peer from all kinds of attacks, but from excessive activity will protect.
+Please, be aware that this complex is designed to protect peers only from the excessive activity, and not from the all types of attacks.
 
 ## Getting Started
 ### Install first:
@@ -13,7 +13,7 @@ The security complex is designed to protect peer from excessive activity in the 
 * `git submodule update`
 
 ### Setting
-To participate in the generation of blocks, before the start of the peer is need to set the environment variable `SECRET_SEED` with the SEED account, on whose behalf the blocks will be generated.
+To participate in block generation you need to set the environment variable `SECRET_SEED` before the start of the peer. The environment variable to be set with the SEED account on whose behalf the blocks will be generated.
 
 The environment variables for docker-compose also can be specified in the `.env` file (located in the current working directory):
 ```
@@ -39,7 +39,7 @@ docker-compose up -d
 ```
 
 ### Updating peer-server
-To update the code base of the peer, is necessary to execute in the project folder:
+To update the code base of the peer you need to execute the following command in the project folder:
 ```
 git submodule update
 ```
